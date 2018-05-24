@@ -14,6 +14,7 @@ String &String::operator + (const String& str)
     strcpy(temp, rep);
     strcat(temp, str.rep);
     String src(temp);
+    delete []temp;
     return src;
 }
 //简单修改
