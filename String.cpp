@@ -16,3 +16,4 @@ String &String::operator + (const String& str)
     String src(temp);
     return src;
 }
+//简单修改
