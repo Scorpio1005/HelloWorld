@@ -13,6 +13,5 @@ String &String::operator + (const String& str)
     char *temp = rep;
     strcat(temp, str.rep);
     String src(temp);
-    delete []temp;
     return src;
 }
