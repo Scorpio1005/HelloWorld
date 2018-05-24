@@ -10,7 +10,8 @@ String &String::operator += (const String& str)
 }
 String &String::operator + (const String& str)
 {
-    char *temp = rep;
+    char *temp = new char[len+1];
+    strcpy(temp, rep);
     strcat(temp, str.rep);
     String src(temp);
     return src;
